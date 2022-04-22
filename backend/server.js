@@ -30,14 +30,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(bodyParser.json());
 
-// Have Node serve the files for our built React app
-app.use(express.static(path.resolve(__dirname, "../frontend/build")));
+// // Have Node serve the files for our built React app
+// app.use(express.static(path.resolve(__dirname, "../frontend/build")));
 
-// All other GET requests not handled before will return our React app
+// // All other GET requests not handled before will return our React app
 
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../frontend/build", "index.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "../frontend/build", "index.html"));
+// });
 
 app.use("/api/", searchRoute);
 app.use("/api", movieRoute);
