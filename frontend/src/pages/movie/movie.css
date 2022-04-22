@@ -1,0 +1,154 @@
+.movie {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.movie__trailer {
+  max-width: 90em;
+  width: 95%;
+}
+.youtube__video {
+  height: 320px;
+}
+.movie__content {
+  color: white;
+  width: 95%;
+  max-width: 90em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.219);
+}
+.movie__content--right {
+  grid-column: 2 / span 2;
+  margin-left: 1.8em;
+}
+.movie__title {
+  font-size: var(--text-3xl);
+  margin-right: 1em;
+}
+.movie__subtitle {
+  list-style: none;
+  margin-top: 0.5em;
+}
+.movie-subtitle__item {
+  margin: 0px 3px;
+  margin-top: 0.5em;
+  font-weight: 200;
+}
+.movie__overview {
+  margin-top: 0.5em;
+  max-width: 80ch;
+  font-size: var(--text-base);
+}
+.movie__poster {
+  width: 100%;
+  max-width: 18em;
+  margin-left: 1em;
+}
+.reviews {
+  width: 95%;
+  max-width: 90em;
+  color: #ffffff;
+}
+.movie__recom--hide {
+  display: none;
+}
+.movie__recom h2 {
+  color: #ffffff;
+  margin-top: 1em;
+}
+.movie__recom {
+  width: 95%;
+  max-width: 90em;
+}
+.recom__content {
+  padding-bottom: 10px;
+  overflow-x: auto;
+  margin-top: 1em;
+}
+
+.recom__content::-webkit-scrollbar {
+  background-color: rgba(160, 160, 252, 0.219);
+  border-radius: 10px;
+  height: 10px;
+}
+.recom__content::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.recom__row {
+  width: 100%;
+  display: flex;
+}
+.recom-row__item {
+  margin: 5px;
+}
+.recom__img {
+  width: 8em;
+  height: 100%;
+}
+.recom__img img {
+  width: 100%;
+  height: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+@media screen and (min-width: 26.25em) {
+  .youtube__video {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 40em) {
+  .youtube__video {
+    height: 440px;
+  }
+}
+@media screen and (min-width: 48em) {
+  .youtube__video {
+    height: 520px;
+  }
+  .movie__title {
+    font-size: var(--text-5xl);
+  }
+  .movie__overview {
+    font-size: var(--text-lg);
+  }
+  .recom__img {
+    width: 12em;
+  }
+}
+@media screen and (min-width: 64em) {
+  .youtube__video {
+    height: 640px;
+  }
+  .movie__content--right {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .youtube__video {
+    height: 660px;
+  }
+  .movie__poster {
+    max-width: 20em;
+  }
+}
+@media screen and (min-width: 96em) {
+  .youtube__video {
+    height: 720px;
+  }
+  .movie__title {
+    font-size: var(--text-6xl);
+  }
+  .movie__overview {
+    font-size: var(--text-xl);
+  }
+  .recom__img {
+    width: 15em;
+  }
+}

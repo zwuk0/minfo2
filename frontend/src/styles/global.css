@@ -1,0 +1,30 @@
+:root {
+  --bg-blue: rgba(18, 24, 36, 1);
+  --bg-blue2: rgba(30, 37, 54, 1);
+  --text-slate-100: rgb(241 245 249);
+  --text-slate-400: rgb(148 163 184);
+  --text-slate-500: rgb(100 116 139);
+  --text-white: rgb(255 255 255);
+  --text-black: rgb(0 0 0);
+  --breakpoint-xm: 26.25em; /*420px*/
+  --breakpoint-sm: 40em; /*640px*/
+  --breakpoint-md: 48em; /*768px*/
+  --breakpoint-lg: 64em; /*1024px*/
+  --breakpoint-xl: 80em; /*1280px*/
+  --breakpoint-2xl: 96em; /*1536px*/
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.25rem; /* 36px */
+  --text-5xl: 3rem; /* 48px */
+  --text-6xl: 3.75rem; /* 60px */
+  --text-7xl: 4.5rem; /* 72px */
+  --text-8xl: 6rem; /* 96px */
+  --text-9xl: 8rem; /* 128px */
+  --fluid-typography-ratio: 1;
+  --rem: calc(var(--text-base) + var(--fluid-typography-ratio) * 1vw);
+}

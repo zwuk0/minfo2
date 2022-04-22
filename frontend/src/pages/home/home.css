@@ -1,0 +1,25 @@
+.home__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home__nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+.home__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1em;
+  border: 1px solid #ffffff49;
+  padding: 5px 8px;
+  margin: 0 5px;
+  background-color: rgba(2, 9, 32, 0.993);
+}
+.home__link:hover {
+  transform: scale(1.1);
+}
+.movie__trailer--hidden {
+  display: none;
+}
